@@ -23,6 +23,7 @@ body {
     padding: 20px 0px 19px;
 }
 .top nav a {
+    text-decoration: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -240,26 +241,27 @@ body {
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
 .bg_contacts .telegram {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 107.69%;
-    /* identical to box height, or 39px */
     text-align: center;
-    letter-spacing: 0.035em;
-    color: #FFFFFF;
-    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
 .telegram img{
     position: relative;
     display: inline-block;
     vertical-align: middle;
 }
-.telegram p {
+.telegram a {
     display: inline-block;
     margin: 0;
     vertical-align: middle;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 107.69%;
+    /* identical to box height, or 39px */
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
 }
 .bg_footer {
     background-color: #2F274A;
@@ -281,6 +283,9 @@ body {
 .bg_footer .bottom_nav td {
     width: 200px;
     height: 45px;
+}
+.bottom_nav a {
+    text-decoration: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -293,27 +298,28 @@ body {
     float:right;
     margin-top:40px;
     margin-right: 80px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 107.69%;
-    /* or 17px */
     text-align: right;
     vertical-align: super;
-    letter-spacing: 0.035em;
-    color: #FFFFFF;
-    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
 .bg_footer .telegram_footer img {
     position: relative;
     display: inline-block;
     vertical-align: middle;
 }
-.bg_footer .telegram_footer p {
+.bg_footer .telegram_footer a {
     display: inline-block;
     margin: 0;
     vertical-align: middle;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 107.69%;
+    /* or 17px */
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
 .bg_footer .bottom_footer {
     display: inline;
@@ -322,6 +328,9 @@ body {
 .bg_footer .bottom_footer td {
     width: 100px;
     height: auto;
+}
+.bg_footer .bottom_footer a {
+    text-decoration: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
