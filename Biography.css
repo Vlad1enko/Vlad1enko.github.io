@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 body {
     margin: 0;
 }
-.top {
+
+/*          FIXED HEADER
+---------------------------------- */
+
+header {
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -10,21 +13,21 @@ body {
     background-color: #306BAC;
     height: 60px;
 }
-.top figure {
-    left: 80px;
-    position: relative;
+.content-wrap {
+    width: 88%;
+    margin: 0 auto;
+}
+header figure {
     display: inline-block;
     margin: 0;
 }
-.top nav {
-    position: relative;
+header nav {
     float: right;
-    right: 80px;
     padding: 20px 0px 19px;
 }
-.top nav a {
+header nav a {
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -32,22 +35,46 @@ body {
     color: #FFFFFF;
     text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
 }
-.bg_purple {
+
+/*          MAIN PAGE
+---------------------------------- */
+
+/*          ANIMATION BLOCK
+---------------------------------- */
+
+#bg-darkblue {
     background-color: #2B4162;
-    height: 628px;
     margin-top: 60px;
-    position: relative;
     overflow: hidden;
+    width: 100%;
 }
-.moving {
-    display: block;
-    position: relative;
-    top: 10px;
-    height: 648px;
-    width: auto;
-    margin: auto;
+#bg-darkblue #moving {
     animation-duration: 3s;
     animation-name: slidein;
+}
+#bg-darkblue #moving-name {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 30px;
+    width: 405px;
+    height: auto;
+    margin: auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 66px;
+    line-height: 88.69%;
+    /* or 49px */
+    color: #FFFFFF;
+}
+#bg-darkblue #moving-img {
+    display: block;
+    position: relative;
+    top: 40px;
+    height: 526px;
+    width: auto;
+    margin: auto;
 }
 @keyframes slidein {
     from {
@@ -57,45 +84,41 @@ body {
         transform : translateX(0em);
     }
 }
-.bg_darkpurple {
+
+/*          ABOUT ME
+---------------------------------- */
+
+#bg-darkpurple {
     background-color: #493C73;
-    height: 432px;
-    position: relative;
+    padding: 45px 0px;
+    width: 100%;
+    overflow: auto;
 }
-.bg_darkpurple h2 {
-    position: relative;
-    top: 45px;
-    font-family: Roboto;
+#bg-darkpurple h2 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 54px;
     line-height: 88.69%;
-    margin-top:0;
     /* identical to box height, or 48px */
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.bg_darkpurple .coat {
-    position: relative;
-    left: 80px;
-    top: 40px;
+#bg-darkpurple #coat-of-arms {
     float: left;
-    display: flex;
     width: 30%;
-    justify-content: center;
 }
-.bg_darkpurple img {
-    display: flex;
-    justify-content: center;
-    min-width: 170px;
-    margin: auto;
+#bg-darkpurple img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
 }
-.description_coat {
-    position: relative;
-    width: 279px;
-    top: 15px;
-    font-family: Roboto;
+#description-coa {
+    max-width: 279px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 29px;
@@ -105,12 +128,10 @@ body {
     color: #FFFFFF;
     text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.bg_darkpurple p {
-    position: relative;
-    width: 60%;
-    right: 80px;
+#bg-darkpurple p {
+    width: 70%;
     float: right;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
@@ -121,30 +142,32 @@ body {
     color: #FFFFFF;
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
-.bg_lightpurple {
+
+/*          WHAT WAS THIS PAGE CREATED FOR?
+---------------------------------- */
+
+#bg-lightpurple {
     background-color: #564787;
-    height: 376px;
+    overflow: auto;
+    width: 100%;
+    padding: 45px 0px;
 }
-.bg_lightpurple h2 {
-    position: relative;
-    top: 45px;
-    font-family: Roboto;
+#bg-lightpurple h2 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 54px;
     line-height: 88.69%;
-    margin-top:0;
     /* identical to box height, or 48px */
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.bg_lightpurple p {
-    position: relative;
-    width: 50%;
-    left: 101px;
+#bg-lightpurple p {
+    width: 55%;
     float: left;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
@@ -155,40 +178,56 @@ body {
     color: #FFFFFF;
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
-.bg_lightpurple .gif {
-    position: relative;
-    right: 100px;
-    top: 10px;
+#bg-lightpurple #gif {
     float: right;
+    width: 40%;
+    height: 300px;
     display: flex;
-    width: 30%;
+    align-items: center;
     justify-content: center;
 }
-.gif img {
-    max-width: 464px;
-    height: auto;
+#gif img {
+    max-height: 100%;
+    max-width: 100%;
 }
-.bg_skills {
+
+/*          SKILLS
+---------------------------------- */
+
+#bg-skills {
     background-color: #493C73;
-    height: 475px;
     text-align: center;
-    margin: 0px;
-    padding: 45px;
+    overflow: auto;
+    width: 100%;
+    padding: 45px 0px;
 }
-.bg_skills ul {
-    margin-top: 0px;
-    padding: 0px 80px 0px;
+#bg-skills h2 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 88.69%;
+    /* identical to box height, or 48px */
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.bg_skills li {
+#bg-skills ul {
+    margin: 0;
+    padding: 0;
+}
+#bg-skills li {
     display: inline-block;
     width: 28%;
     padding-right: 50px;
     vertical-align: top;
 }
-.bg_skills .skill_header {
+#bg-skills .skill-header {
     margin: 15px 0px;
     display: inline-block;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 42px;
@@ -197,9 +236,9 @@ body {
     text-align: center;
     color: #FFFFFF;
 }
-.bg_skills .skill_text {
+#bg-skills .skill-text {
     margin: 0px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -207,29 +246,31 @@ body {
     text-align: center;
     color: #FFFFFF;
 }
-.bg_contacts {
+
+/*          CONTACTS
+---------------------------------- */
+
+#bg-contacts {
     background-color: #564787;
-    height: 293px;
+    overflow: auto;
+    width: 100%;
+    padding: 45px 0px;
 }
-.bg_contacts h2 {
-    position: relative;
-    top: 45px;
-    font-family: Roboto;
+#bg-contacts h2 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 54px;
     line-height: 88.69%;
-    margin-top:0;
     /* identical to box height, or 48px */
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.bg_contacts p {
-    position: relative;
-    margin-top: 84px;
-    margin-bottom: 20px;
-    font-family: Roboto;
+#bg-contacts p {
+    font-family: 'Roboto', sans-serif;
+    margin: 30px 0px 20px;
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
@@ -240,19 +281,18 @@ body {
     color: #FFFFFF;
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
-.bg_contacts .telegram {
+#bg-contacts #telegram {
     text-align: center;
 }
-.telegram img{
-    position: relative;
+#telegram img{
     display: inline-block;
     vertical-align: middle;
 }
-.telegram a {
+#telegram a {
     display: inline-block;
     margin: 0;
     vertical-align: middle;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
@@ -263,30 +303,34 @@ body {
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
 }
-.bg_footer {
+
+/*          FOOTER
+---------------------------------- */
+
+#bg-footer {
     background-color: #2F274A;
-    height: 278px;
+    overflow: auto;
+    width: 100%;
+    padding: 45px 0px;
 }
-.bg_footer .logo_footer {
+#bg-footer #logo-footer {
     margin:0;
     display: inline-block;
-    margin-left: 80px;
-    margin-top:45px;
 }
-.bg_footer .logo_footer img {
+#bg-footer #logo-footer img {
     vertical-align: middle;
 }
-.bg_footer .bottom_nav {
+#bg-footer #bottom-nav {
     margin-left: 115px;
     display: inline;
 }
-.bg_footer .bottom_nav td {
+#bg-footer #bottom-nav td {
     width: 200px;
     height: 45px;
 }
-.bottom_nav a {
+#bottom-nav a {
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -294,24 +338,21 @@ body {
     /* or 14px */
     color: #FFFFFF;
 }
-.bg_footer .telegram_footer {
+#bg-footer #telegram-footer {
     float:right;
-    margin-top:40px;
-    margin-right: 80px;
     text-align: right;
-    vertical-align: super;
+    margin-top: 4px;
 }
-.bg_footer .telegram_footer img {
-    position: relative;
+#bg-footer #telegram-footer img {
     display: inline-block;
     vertical-align: middle;
 }
-.bg_footer .telegram_footer a {
+#bg-footer #telegram-footer a {
     display: inline-block;
     margin: 0;
     vertical-align: middle;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -321,17 +362,16 @@ body {
     color: #FFFFFF;
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
-.bg_footer .bottom_footer {
+#bg-footer #bottom-footer {
     display: inline;
-    margin-left: 80px;
 }
-.bg_footer .bottom_footer td {
+#bg-footer #bottom-footer td {
     width: 100px;
     height: auto;
 }
-.bg_footer .bottom_footer a {
+#bg-footer #bottom-footer a {
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -339,13 +379,12 @@ body {
     /* identical to box height, or 11px */
     color: #FFFFFF;
 }
-.bg_footer .bottom_international {
+#bg-footer #bottom-international {
     margin:0;
     text-align:right;
     margin-top: 80px;
-    margin-right: 80px;
     margin-bottom: 5px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -353,16 +392,44 @@ body {
     /* identical to box height, or 11px */
     color: #FFFFFF;
 }
-.bg_footer .bottom_last {
+#bg-footer #bottom-last {
     margin:0;
-    margin-top: 5px;
+    margin-top: 7px;
     float: right;
-    margin-right: 80px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 88.69%;
     /* identical to box height, or 11px */
     color: #FFFFFF;
+}
+@media only screen and (min-width: 768px) {
+    #bg-darkpurple p,#bg-lightpurple p {
+        font-size: 32px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #bg-darkpurple p,#bg-lightpurple p {
+      font-size: 32px;
+    }
+    #bg-darkpurple #coat-of-arms {
+        margin-top: 32px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #bg-darkpurple p,#bg-lightpurple p{
+      font-size: 38px;
+    }
+    #bg-darkpurple #coat-of-arms {
+        margin-top: 38px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    #bg-darkpurple p,#bg-lightpurple p{
+      font-size: 42px;
+    }
+    #bg-darkpurple #coat-of-arms {
+        margin-top: 42px;
+    }
 }
