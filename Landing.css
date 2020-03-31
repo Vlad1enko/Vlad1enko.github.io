@@ -40,7 +40,7 @@ body {
 -------------------------------*/
 
 #background {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 51.75%), url(horizon\ 1.png);
     background-size: cover;
     background-position: center;
@@ -176,7 +176,7 @@ header nav a {
 -------------------------------------------------------------------------*/
 
 #black-background {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     width:100%;
     padding-bottom: 25px;
     background-size: cover;
