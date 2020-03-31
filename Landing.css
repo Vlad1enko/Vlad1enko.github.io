@@ -617,7 +617,7 @@ header .burger-active .burger-line::after {
 
 .mobile-nav {
     z-index: 12;
-    display: block;
+    display: none;
     position: absolute;
     right: -420px;
     top: 0;
@@ -630,11 +630,13 @@ header .burger-active .burger-line::after {
 
 @media (max-width: 768px) {
     .mobile-nav {
+        display: block;
         width: 320px;
         right: -421px;
     }
 }
 
 .mobile-nav--active {
+    
     transform: translateX(-100%);
 }
